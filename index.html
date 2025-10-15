@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VUKSAN E & D j.d.o.o.</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Times New Roman', serif;
+      scroll-behavior: smooth;
+      background-color: #f2f2f2;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 25px;
+      font-size: 22px;
+      text-decoration: none;
+    }
+
+    section {
+      width: 100vw;
+      height: 100vh;
+      padding: 100px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+      url('https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 28px;
+      max-width: 900px;
+    }
+
+    .content-box {
+      background-color: white;
+      padding: 40px;
+      border: 2px solid #ccc;
+      font-size: 26px;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    .services, .advantages, .process {
+      display: flex;
+      justify-content: space-around;
+      gap: 40px;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .service-box, .advantage-box, .process-step {
+      background-color: white;
+      padding: 30px;
+      border: 2px solid #ccc;
+      font-size: 26px;
+      width: 300px;
+    }
+
+    .service-box button {
+      margin-top: 20px;
+      padding: 15px 25px;
+      font-size: 24px;
+      background-color: #000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact-form {
+      font-size: 28px;
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border: 2px solid #ccc;
+      width: 500px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      font-size: 22px;
+    }
+
+    .contact-form button {
+      padding: 15px 25px;
+      font-size: 24px;
+      background-color: #000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 80px 20px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+
+      .services, .advantages, .process {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#pocetna">Početna</a>
+    <a href="#onama">O nama</a>
+    <a href="#usluge">Usluge</a>
+    <a href="#prednosti">Zašto mi</a>
+    <a href="#proces">Kako radimo</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section class="hero" id="pocetna">
+    <h1>VUKSAN E & D j.d.o.o.</h1>
+    <p>Vaš partner za tehničko savjetovanje, IT podršku i softverska rješenja prilagođena malim poduzećima. Pomažemo vam digitalizirati poslovanje s jasnim fokusom na učinkovitost i rast.</p>
+  </section>
+
+  <section id="onama">
+    <h2>Naša priča</h2>
+    <div class="content-box">
+      VUKSAN E & D j.d.o.o. je specijalizirana tvrtka sa sjedištem u Velikoj Gorici koja pruža usluge tehničkog savjetovanja, razvoja softvera i IT podrške. Naš tim ima višegodišnje iskustvo u radu s malim poduzetnicima i obrtnicima. Pomažemo klijentima modernizirati poslovanje kroz tehnološka rješenja koja su jednostavna, održiva i učinkovita. Vjerujemo u personalizirani pristup svakom projektu te stvaramo rješenja koja odgovaraju stvarnim potrebama korisnika.
+    </div>
+  </section>
+
+  <section id="usluge">
+  <h2>Što nudimo</h2>
+  <div class="services">
+    <div class="service-box">
+      <h3>Tehničko savjetovanje</h3>
+      <p>Analiziramo vaše poslovanje i predlažemo optimalna tehnička rješenja za digitalnu transformaciju i rast vaše tvrtke.</p>
+    </div>
+    <div class="service-box">
+      <h3>IT i softverska podrška</h3>
+      <p>Pratimo vas kroz sve IT izazove – od svakodnevne podrške do postavljanja sigurnih mreža i infrastrukture.</p>
+    </div>
+    <div class="service-box">
+      <h3>Razvoj softvera</h3>
+      <p>Izrađujemo prilagođene aplikacije i alate koji olakšavaju poslovne procese i štede vaše vrijeme i novac.</p>
+    </div>
+  </div>
+
+  <!-- Кнопка после всех карточек -->
+  <div style="margin-top: 50px;">
+    <a href="#kontakt">
+      <button style="padding: 20px 40px; font-size: 28px; background-color: #000; color: white; border: none; cursor: pointer;">
+        Kontaktirajte nas
+      </button>
+    </a>
+  </div>
+</section>
+
+  <section id="prednosti">
+    <h2>Zašto surađivati s nama</h2>
+    <div class="advantages">
+      <div class="advantage-box">
+        <h3>Pristup prilagođen klijentu</h3>
+        <p>Svako rješenje oblikujemo prema specifičnim potrebama vašeg poslovanja.</p>
+      </div>
+      <div class="advantage-box">
+        <h3>Iskustvo i stručnost</h3>
+        <p>Naš tim se sastoji od IT stručnjaka s dugogodišnjim iskustvom u raznim industrijama.</p>
+      </div>
+      <div class="advantage-box">
+        <h3>Brza i pouzdana podrška</h3>
+        <p>Dostupni smo kad vam je najpotrebnije – brzo reagiramo i rješavamo probleme.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="proces">
+    <h2>Kako radimo</h2>
+    <div class="process">
+      <div class="process-step">
+        <h3>1. Analiza potreba</h3>
+        <p>Zajedno identificiramo izazove i definiramo ciljeve vašeg poslovanja.</p>
+      </div>
+      <div class="process-step">
+        <h3>2. Planiranje i razvoj</h3>
+        <p>Kreiramo strategiju i razvijamo rješenja u skladu s dogovorenim ciljevima.</p>
+      </div>
+      <div class="process-step">
+        <h3>3. Implementacija i podrška</h3>
+        <p>Rješenje uvodimo u vaš sustav i pružamo kontinuiranu tehničku podršku.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontaktirajte nas</h2>
+    <div class="contact-form">
+      <p>Imate pitanje? Pošaljite nam poruku i javit ćemo vam se u najkraćem roku. Veselimo se suradnji i zajedničkom uspjehu!</p>
+      <p><strong>Adresa:</strong> Ulica Matice hrvatske 3, 10410 Velika Gorica</p>
+      <p><strong>Email:</strong> team@vuksaned.tech</p>
+      <form>
+        <input type="text" placeholder="Vaše ime" required>
+        <input type="email" placeholder="Vaš email" required>
+        <textarea rows="5" placeholder="Vaša poruka" required></textarea>
+        <button type="submit">Pošalji</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
